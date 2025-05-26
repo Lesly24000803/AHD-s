@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Productos</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Moon+Dance&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">SweetHeat</div>
+        <ul>
+          <li><a href="dashboard.html">Panel Principal</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+        </ul>
+        <!-- Con el div y los span crearemos un icono de tipo hamburguesa -->
+        <div class="hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Productos</h1>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img
+              src="https://i.pinimg.com/736x/ba/7b/fe/ba7bfe4372de47dfed0c1eb667c201d3.jpg"
+              alt=""
+            />
+            <h3>Blusa Vintage # 01 color amarilla</h3>
+            <p>Q 100.00</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://i.pinimg.com/736x/c6/fb/e0/c6fbe076d2d8124295c4e0b4fe86a89b.jpg"
+              alt=""
+            />
+            <h3>Blusa Vintage #02 color blanco</h3>
+            <p>Q 75.00</p>
+            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+          </div>
+          <div class="producto">
+            <img
+              src="https://i.pinimg.com/736x/ef/0a/78/ef0a7850ed0c8286320ed152c5587cc2.jpg"
+              alt=""
+            />
+            <h3>Vestido Elegante #03 color rosado</h3>
+            <p>Q 150.00</p>
+            <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://i.pinimg.com/736x/86/eb/fc/86ebfc50c2132375fa7683ce380eb4f8.jpg"
+              alt=""
+            />
+            <h3>Blusa Clasica #04 color verde musgo</h3>
+            <p>Q 85.00</p>
+            <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+          </div>
+          <div class="producto">
+            <img
+              src="https://i.pinimg.com/736x/f8/90/da/f890da86d57ae3230246bd6bdd864b4d.jpg"
+              alt=""
+            />
+            <h3>Vestido Clasico #05 color blanco</h3>
+            <p>Q 200.00</p>
+            <button onclick="agregarAlCarrito(5)">Agregar al carrito</button>
+          </div>
+          <div class="producto">
+            <img
+              src="https://i.pinimg.com/736x/da/41/3a/da413ad6b96dea1f6c608e2701a801f6.jpg"
+              alt=""
+            />
+            <h3>Chaleco Clasica #06 color verde</h3>
+            <p>Q 125.00</p>
+            <button onclick="agregarAlCarrito(6)">Agregar al carrito</button>
+          </div>
+          
+        </div>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-productos"></ul>
+            <p><strong>Total:</strong> <span id="total">0</span></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../js/carrito.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/logout.js"></script>
+  </body>
+</html>

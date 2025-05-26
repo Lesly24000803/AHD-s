@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/animaciones.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Moon+Dance&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SweetHeat</div>
+            <img class="flor" src="img/flor.png" alt="" width="50px">
+
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+            <!-- Con el div y los span crearemos un icono de tipo hamburguesa -->
+            <div class="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-main">
+        <section class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="pass">Contraseña:</label>
+                <input type="password" id="pass" name="pass" required>
+
+                <button type="submit">Ingresar</button>
+            </form>
+            <p id="mensajeLogin"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contacto-footer">
+        <p>Contáctanos: 📞 +502 1234 5678 | 📧 contacto@SweetHeat.com</p>
+        <p>Dirección: Zona 1 , Ciudad Guatemala</p>
+        <div class="redes-sociales">
+          <a href="#"><img src="https://img.freepik.com/psd-premium/icon-3d-redes-sociales-facebook_466778-4384.jpg?semt=ais_hybrid&w=740" alt="Facebook" width="30" height="30"></a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcYGK1sj6Ybm8uhae8QSfgNzGHLbTQWqaTnQ&s" alt="Instagram"width="30" height="30"></a>
+        </div>
+        <p>2025 - Todos los derechos reservados</p>
+    </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/login.js"></script>
+</body>
+</html>
